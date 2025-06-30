@@ -1,0 +1,66 @@
+<box>
+<h1>Web2advance</h1>
+
+<tap onmousedown="  
+pile('text').hasAttribute('hide')
+? pile('text').removeAttribute('hide')
+: pile('text').setAttribute('hide', '');
+">
+toggle
+</tap>
+</box>
+
+<text id="text">Hello! to our site</text>
+
+<list agfdg>
+a
+</list>
+
+<script> 
+const pile = (selector) => document.querySelector(selector);
+
+pile('[agfdg]').insertAdjacentHTML('afterend', 
+      `
+      
+      <text> Hello </text>
+      `)
+</script> 
+
+<style>
+box {
+margin: 10px;
+padding: 10px;
+background: #333;
+border-radius: 15px;
+display: block;
+color: white;
+}
+
+tap {
+cursor: pointer;
+color: #0af;
+display: inline-block;
+margin-top: 10px;
+}
+
+text {
+display: block;
+margin-top: 10px;
+color: white;
+}
+
+list {
+display: block;
+margin-top: 10px;
+color: white;
+}
+
+* {
+background: #333;
+font-family: sans-serif;
+}
+
+[hide] {
+display: none;
+}
+</style>
